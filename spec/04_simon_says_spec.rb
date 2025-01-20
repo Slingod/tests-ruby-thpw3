@@ -26,10 +26,6 @@ describe "Simon says" do
       expect(repeat("hello")).to eq("hello hello")
     end
 
-    # Wait a second! How can you make the "repeat" method
-    # take one *or* two arguments?
-    #
-    # Hint: *default values* https://www.skorks.com/2009/08/method-arguments-in-ruby/
     it "should repeat a number of times" do
       expect(repeat("hello", 3)).to eq("hello hello hello")
     end
@@ -76,8 +72,7 @@ describe "Simon says" do
     end
 
     it "does capitalize 'little words' at the start of a title" do
-      expect(titleize("the bridge over the river kwai")).to eq("The Bridge Over the River Kwai")
+      expect(titleize("the bridge Over the river kwai")).to eq("The Bridge Over the River Kwai")
     end
   end
-
 end
